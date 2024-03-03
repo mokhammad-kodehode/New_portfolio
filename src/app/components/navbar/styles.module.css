@@ -1,0 +1,48 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #1c1c1e; /* Темный фон */
+    color: white;
+    padding: 20px;
+  }
+  
+  .logo a {
+    color: red; /* Цвет логотипа */
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navItems {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navItem a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+  }
+  
+  .navItem a:hover {
+    color: #ffcc00; /* Цвет при наведении */
+  }
+  
+  .contactButton {
+    display: block;
+    text-align: center;
+    background-color: #ffcc00; /* Цвет кнопки */
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contactButton:hover {
+    background-color: #ffd700; /* Цвет кнопки при наведении */
+  }
