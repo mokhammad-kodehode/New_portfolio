@@ -1,11 +1,9 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import VerticalNavbar from "./components/navbar/Navbar";
 
 export default function Home() {
   return (
       <>
-      <VerticalNavbar />
       <main className={styles.main}>
         <section className={styles.container}>
               <div className={styles.container_title}>
@@ -25,6 +23,7 @@ export default function Home() {
                     </div>
               </div>
           </section>
+          
       </main>
     </>
   );

@@ -1,27 +1,63 @@
 .navbar {
+  display: none;
+  }
+
+  .hamburger {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    background: transparent;
+    border: none;
+    z-index: 2; /* Above the navbar */
+  }
+
+  
+  
+  /* Create three equal bars */
+  .hamburger span {
+    display: block;
+    width: 39px;
+    height: 4px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    transition: 0.4s;
+  }
+
+  .open {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     height: 100vh;
+    width: 20%;
     background-color: #1c1c1e; /* Темный фон */
     color: white;
     padding: 20px;
   }
   
+
+  .logo  {
+    text-align: center;
+  }
   .logo a {
-    color: red; /* Цвет логотипа */
+    color: rgb(255, 255, 255); /* Цвет логотипа */
     text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: 500;
+    
   }
   
   .navItems {
     list-style: none;
     padding: 0;
+    text-align: center;
   }
   
-  .navItem a {
+  .navItem  {
     display: block;
+    font-size: 28px;
     color: white;
     text-decoration: none;
     padding: 10px 0;
@@ -29,14 +65,14 @@
   }
   
   .navItem a:hover {
-    color: #ffcc00; /* Цвет при наведении */
+    color: #FEC342; /* Цвет при наведении */
   }
   
   .contactButton {
     display: block;
     text-align: center;
-    background-color: #ffcc00; /* Цвет кнопки */
-    color: black;
+    background-color: transparent; /* Цвет кнопки */
+    color: #FF6262;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -44,5 +80,5 @@
   }
   
   .contactButton:hover {
-    background-color: #ffd700; /* Цвет кнопки при наведении */
+    background-color: #292929; /* Цвет кнопки при наведении */
   }
