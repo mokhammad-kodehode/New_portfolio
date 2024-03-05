@@ -6,8 +6,8 @@
     display: inline-block;
     cursor: pointer;
     position: absolute;
-    top: 25px;
-    left: 35px;
+    top: 20px;
+    left: 20px;
     background: transparent;
     border: none;
     z-index: 2; /* Above the navbar */
@@ -21,7 +21,7 @@
     width: 39px;
     height: 4px;
     margin-bottom: 5px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     transition: 0.4s;
   }
 
@@ -31,20 +31,31 @@
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    width: 20%;
-    background-color: #1c1c1e; /* Темный фон */
+    width: 17%;
+    background-color: #1D1D1D; /* Темный фон */
     color: white;
-    padding: 20px;
+    padding: 50px 0;
+    transition: transform 0.3s ease;
+  }
+
+  .isActive {
+    color: #FEC342;
   }
   
 
   .logo  {
     text-align: center;
   }
+
+  .logo span  {
+    color: #FEC342;
+    font-size: 18px;
+  }
+  
   .logo a {
     color: rgb(255, 255, 255); /* Цвет логотипа */
     text-decoration: none;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     
   }
@@ -62,6 +73,7 @@
     text-decoration: none;
     padding: 10px 0;
     transition: color 0.3s ease;
+    margin-top: 15px;
   }
   
   .navItem a:hover {
