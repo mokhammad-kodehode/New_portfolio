@@ -14,12 +14,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     z-index: 1;
+    padding: 20px 220px;
     width: 99%;
     border-radius: 15px;
     height: 98%;
-    text-align: center;
+    text-align: s;
  }
 
 
@@ -42,4 +43,20 @@
     margin-left: 3px;
     transition: .5s;
     font-weight: 300;
+    opacity: 0; /* Начальное значение непрозрачности */
+    transform: translateY(-20px); /* Начальное значение смещения по вертикали */
+    animation: fadeInUp 0.5s ease forwards; /* Используем анимацию fadeInUp */
+  }
+
+
+  /* Определение ключевых кадров анимации */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0; /* Начальное значение непрозрачности */
+      transform: translateY(-20px); /* Начальное значение смещения по вертикали */
+    }
+    to {
+      opacity: 1; /* Конечное значение непрозрачности */
+      transform: translateY(0); /* Конечное значение смещения по вертикали */
+    }
   }

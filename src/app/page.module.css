@@ -20,16 +20,32 @@
      width: 99%;
      border-radius: 15px;
      height: 98%;
-     transition: transform 0.3s ease;
+     transition: transform 0.3s ease;/* Начальное значение непрозрачности */
+     transform: translateY(-20px); /* Начальное значение смещения по вертикали */
+     animation: fadeInUp 0.5s ease forwards; 
   }
 
-
-.container_title {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  gap: 2rem;
+  .container_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+    opacity: 0; /* Начальное значение непрозрачности */
+    transform: translateY(-60px); /* Начальное значение смещения по вертикали */
+    animation: fadeInUp 0.5s ease forwards; /* Используем анимацию fadeInUp */
+  }
+  
+  /* Определение ключевых кадров анимации */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0; /* Начальное значение непрозрачности */
+      transform: translateY(-60px); /* Начальное значение смещения по вертикали */
+    }
+    to {
+      opacity: 1; /* Конечное значение непрозрачности */
+      transform: translateY(0); /* Конечное значение смещения по вертикали */
+    }
   }
 
   .title_content {

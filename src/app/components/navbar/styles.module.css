@@ -25,21 +25,76 @@
     transition: 0.4s;
   }
 
+  .navbar {
+    left: -300px; /* начальное положение за экраном */
+    width: 300px;
+    z-index: 1;
+    height: 100vh;
+    background-color: #333;
+    transition: left 0.3s ease; /* анимация для изменения положения */
+}
+
+.navbar.open {
+    left: 0; /* показать навбар сдвигая вправо */
+}
+
+/* Анимация для появления/исчезновения навбара */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-5%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutToLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.navbar {
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+}
+
+.navbar.open {
+    animation-name: slideInFromLeft;
+}
+
+.navbar:not(.open) {
+    animation-name: slideOutToLeft;
+}
+
   .open {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    width: 17%;
-    background-color: #1D1D1D; /* Темный фон */
+    border-radius:15px;
+    height: calc(100vh - 15px);
+    width: 20%;
+    background-color: #000000; /* Темный фон */
     color: white;
     padding: 50px 0;
     transition: transform 0.3s ease;
+    margin-left: 5px;
   }
 
-  .isActive {
+  .active  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #FEC342;
+    font-size: 26px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    height: 60px;
+    text-shadow: 1px 1px 6px rgb(255, 255, 255, 0.3);
   }
   
 
@@ -68,12 +123,15 @@
   
   .navItem  {
     display: block;
-    font-size: 28px;
+    font-size: 24px;
     color: white;
     text-decoration: none;
-    padding: 10px 0;
-    transition: color 0.3s ease;
-    margin-top: 15px;
+    transition: 0.3s;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .navItem a:hover {

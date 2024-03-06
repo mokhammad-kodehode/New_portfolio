@@ -23,6 +23,19 @@ export default function About() {
                             About myself I can say that I am honest, responsible, motivated. I can be competitive at work
                         </p>
               </div>
+              <div > 
+                <h2>MY SKILLS</h2>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>TypeScript</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>MongoDB</li>
+                  <li>Figma</li>
+                </ul>
+              </div>
           </section>
           
       </main>
