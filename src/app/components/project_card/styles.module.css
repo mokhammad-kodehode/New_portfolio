@@ -51,4 +51,9 @@
         height: 100%;
      }
     
-  
+  .links {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }

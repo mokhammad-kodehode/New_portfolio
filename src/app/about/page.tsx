@@ -6,7 +6,8 @@ export default function About() {
       <>
       <main className={styles.main}>
         <section className={styles.container}>
-              <div className={styles.container_title}>
+          <div className={styles.container_section}>
+          <div className={styles.container_title}>
                    <h1 className={styles.title_text}>About Me</h1>
                     <p>My name is Mohammad, I am a front-end developer. 
                             Since the beginning of 2023, I have started a Kodehode course focused on the 
@@ -23,7 +24,7 @@ export default function About() {
                             About myself I can say that I am honest, responsible, motivated. I can be competitive at work
                         </p>
               </div>
-              <div > 
+              <div className={styles.skills_section}> 
                 <h2>MY SKILLS</h2>
                 <ul>
                   <li>HTML</li>
@@ -36,6 +37,7 @@ export default function About() {
                   <li>Figma</li>
                 </ul>
               </div>
+          </div>
           </section>
           
       </main>

@@ -14,9 +14,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     z-index: 1;
-    padding: 20px 220px;
     width: 99%;
     border-radius: 15px;
     height: 98%;
@@ -24,10 +23,31 @@
  }
 
 
+
+
+.skills_section ul  {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 400px;
+  transform: translateY(-20px); /* Начальное значение смещения по вертикали */
+    animation: fadeInUp 0.5s ease forwards;
+  list-style-type: none;
+}
+
+.skills_section li {
+  margin-top: 10px;
+}
+
+.skills_section h2 {
+  font-weight: 400;
+  color: #FEC342;
+  margin-top: 20px;
+}
+
  .title_text {
     font-size: 78px;
     color: var(--primary-text-color);
-    margin: 0;
+    margin-bottom: 20px;
     padding: 0;
     font-weight: 500;
     letter-spacing: 1.3px;
@@ -49,7 +69,6 @@
   }
 
 
-  /* Определение ключевых кадров анимации */
   @keyframes fadeInUp {
     from {
       opacity: 0; /* Начальное значение непрозрачности */
